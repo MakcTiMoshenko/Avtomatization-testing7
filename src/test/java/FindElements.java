@@ -57,6 +57,10 @@ public class FindElements extends TestBase{
     @AndroidFindBy(xpath = "//android.widget.ListView/android.view.View[2]/android.view.View")
     MobileElement cheapToExpenc;
 
+    @AndroidFindBy(uiAutomator = "new UiScrollable(scrollable(true)).flingToEnd(3)")
+    MobileElement scrollScreen;
+
+
 
 
     @Description("Тест приложения E-Katalog")
@@ -90,6 +94,7 @@ public class FindElements extends TestBase{
           popularBtn.click();
           cheapToExpenc.isDisplayed();
           cheapToExpenc.click();
+          scrollScreen.isDisplayed();
 
 
 
